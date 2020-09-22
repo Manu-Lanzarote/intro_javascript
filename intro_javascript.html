@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios Intro JS</title>
+    <style>
+      body {
+        background: #222222;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Ejercicio 1.	Escribe un programa que muestre en pantalla “Hola” seguido de tu nombre guardado en una variable.
+      let miNombre = "Manu";
+      console.log("Hola " + miNombre);
+
+      //   Ejercicio 2.	Escribe un programa que pida al usuario un número y convierta el string a un int y lo muestre en pantalla
+      //   let num = parseInt(window.prompt("Introduce un número"));
+      //   console.log(num);
+
+      //   Ejercicio 3.	Escribe un programa que muestre la suma de dos números.
+      //   console.log(78 + 34);
+
+      // Ejercicio. 4.	Escribe un programa que calcule la división de dos números y lo muestre en pantalla
+      //   console.log(6 / 3);
+
+      //   Ejercicio. 5.	Escribe un programa que pida dos números al usuario y muestre el resultado de multiplicar los dos
+
+      //   let num1 = parseInt(window.prompt("Introduce el primer número"));
+      //   let num2 = parseInt(window.prompt("Introduce el segundo número"));
+      //   let resultado = num1 * num2;
+      //   console.log(
+      //     "El resultado de " +
+      //       num1 +
+      //       " multiplicado por " +
+      //       num2 +
+      //       " es igual a" +
+      //       resultado
+      //   );
+
+      //      Ejercicio. 6.	Escribe un programa que muestre el resultado de las siguientes operaciones:
+      // - 5 + 8 * 6
+      // (55 + 9) % 6
+      // 20 + -3*5 / 8
+      // 5 + 15 / 3 * 2 - 8 % 3
+      // (25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5)
+      // 4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/1))
+
+      //   console.log(-5 + 8 * 6);
+      //   console.log(55 + 9) % 6;
+      //   console.log(20 + (-3 * 5) / 8);
+      //   console.log(5 + (15 / 3) * 2 - (8 % 3));
+      //   console.log((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+      //   console.log(4.0 * (1 - 1.0 / 3 + 1.0 / 5 - 1.0 / 7 + 1.0 / 9 - 1.0 / 1));
+
+      //   Ejercicio. 7.	Escribe un programa que pida dos números al usuario y muestre el resultado de sumarlos, multiplicarlos, restarlos, dividirlos y el resto de la división.
+      //   let num1 = parseInt(window.prompt("Intoduce el primer número"));
+      //   let num2 = parseInt(window.prompt("Intoduce el segundo número"));
+      //   let suma = num1 + num2;
+      //   let resta = num1 - num2;
+      //   let multiplicacion = num1 * num2;
+      //   let division = num1 / num2;
+      //   let resto = num1 % num2;
+
+      //   console.log(
+      //     "Suma " + suma,
+      //     "Resta " + resta,
+      //     "Multiplicación " + multiplicacion,
+      //     "División " + division,
+      //     "Resto " + resto
+      //   );
+
+      //   Ejercicio. 8.	Escribe un programa que pida un número al usuario y muestre la tabla de multiplicar hasta 10 de ese número. Por ejemplo si metemos un 8 que muestre:
+      // 8 x 1 = 8
+      // 8 x 2 = 16
+      // 8 x 3 = 24
+      // …
+
+      //   let numUser = parseInt(window.prompt("Dime un número"));
+      //   let num = 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+      //   console.log(numUser + " x " + num + " = " + numUser * num);
+      //   num = num + 1;
+
+      //   Ejercicio. 9.	Escribe un programa que pida al usuario el radio de un círculo y que calcule y muestre el área y el perímetro (el área de un círculo es PI por radio cuadrado y el perímetro es 2 por radio por PI). PI es = 3.141593
+
+      //   let radio = parseInt(
+      //     window.prompt("Introduce el valor del radio en metros")
+      //   );
+      //   const pi = 3.141593;
+      //   let area = pi * (radio * radio);
+      //   let perimetro = 2 * radio * pi;
+      //   console.log(
+      //     `El área de un círculo de ${radio} de radio es igual a ${area} metros cuadrados y su perimetro es igual a ${perimetro} metros`
+      //   );
+
+      // Ejercicio. 10.	Escribe un programa que pida tres números al usuario y que calcule y muestre su media.
+
+      //   let num1 = parseInt(window.prompt("Introduzca el primer número"));
+      //   let num2 = parseInt(window.prompt("Introduzca el segundo número"));
+      //   let num3 = parseInt(window.prompt("Introduzca el tercer número"));
+      //   let media = (num1 + num2 + num3) / 3;
+      //   console.log("La media de los números introducidos es " + media);
+
+      //   Ejercicio. 11.	Escribe un programa que pida la temperatura en celsius y te la calcule en fahrenheit. (para hacer la conversión de celsius a Farenheit : (número de grados celsius * 9 / 5) + 32
+
+      //   let celsius = parseInt(window.prompt("Introduce grados celsius"));
+      //   let farenheit = (celsius * 9) / 5 + 32;
+      //   console.log(`${celsius} grados equivalen a ${farenheit} farenheit`);
+
+      // Ejercicio. 12.	Escribe un programa que le pida al usuario un número de pulgadas y lo convierta a metros (una pulgada son 0.0254 metros)
+
+      //   let pulgadas = parseInt(window.prompt("Introduce pulgadas"));
+      //   let metros = pulgadas * 0.0254;
+      //   console.log(pulgadas + " son " + metros + " metros");
+
+      // Ejercicio. 13.	Escribe un programa que pida al usuario la anchura y altura de un rectángulo y que calcule y muestre su área y su perímetro (el área es la altura por la anchura y el perímetro es 2 por la suma de la altura y la anchura).
+
+      //   let ancho = parseInt(window.prompt("Introduce anchura del rectángulo"));
+      //   let alto = parseInt(window.prompt("Introduce altura del rectángulo"));
+      //   let area = ancho * alto;
+      //   let perimetro = 2 * (ancho + alto);
+      //   console.log("Área: " + area + " - Perímetro: " + perimetro);
+
+      //   Ejercicio. 14.	Escribe un programa que pida una distancia (en metros), y el tiempo tardado (como tres números: horas, minutos y segundos) y que muestre la velocidad en metros por segundo y kilómetros por hora.
+
+      //   let distancia = parseInt(prompt("Introduce distancia en metros"));
+      //   let tiempo = prompt(
+      //     "Introduce las horas, minutos y segundos que has tardado en recorrer esta distancia. (Ej. 03, 23, 12)"
+      //   );
+      //   let horas = parseInt(tiempo.substring(0, 2));
+      //   console.log(horas);
+      //   let minutos = parseInt(tiempo.substring(4, 6));
+      //   console.log(minutos);
+      //   let segundos = parseInt(tiempo.substring(8, 10));
+      //   console.log(segundos);
+
+      //   // Calculo metros/segundo
+      //   let tiempoEnSegundos = horas * 3600 + minutos * 60 + segundos;
+      //   console.log(tiempoEnSegundos);
+
+      //   let veloMetrosPorSegundo = distancia / tiempoEnSegundos;
+      //   console.log(
+      //     "Su velocidad es de " + veloMetrosPorSegundo + " metros/segundo"
+      //   );
+      //   let veloKmHora = distancia / 1000 / (tiempoEnSegundos / 3600);
+      //   console.log("Su velocidad es de " + veloKmHora + " kilometros/hora");
+    </script>
+  </body>
+</html>
