@@ -7,11 +7,12 @@
     <style>
       body {
         background: #222222;
+      color: white;
       }
     </style>
   </head>
   <body>
-    <h3>Intro JS./h3>
+    <h3>Intro JS<h3>
     <script>
       // Ejercicio 1.	Escribe un programa que muestre en pantalla “Hola” seguido de tu nombre guardado en una variable.
       let miNombre = "Manu";
@@ -165,6 +166,130 @@
       //   );
       //   let veloKmHora = distancia / 1000 / (tiempoEnSegundos / 3600);
       //   console.log("Su velocidad es de " + veloKmHora + " kilometros/hora" );
+
+      // Ejercicio. 15.	Escribe un programa que pida dos variables, y después intercambie sus valores (si por ejemplo ponemos 8 en la variable a y 5 en la variable b, que al final del programa la variable a tenga el valor 5 y la variable b el valor 8).
+
+      // let variableA = prompt('Introduce el primer dato');
+      // let variableB = prompt('Introduce el segundo dato');
+      // console.log(variableA, variableB);
+
+      // let tempA = variableA;
+      // let tempB = variableB;
+
+      // variableA = tempB;
+      // variableB = tempA;
+
+      // console.log(variableA, variableB);
+
+      // Ejercicio. 16.	Escribe un programa que pida un número de 3 dígitos y que muestre en pantalla el resultado de sumarlos.
+      // let numero = prompt('Introduce un número de 3 dígitos');
+      // let primerDigito = parseInt(numero.substring(0,1));
+      // console.log(primerDigito);
+      // let segundoDigito = parseInt(numero.substring(1,2));
+      // console.log(segundoDigito);
+      // let tercerDigito = parseInt(numero.substring(2,3));
+      // console.log(tercerDigito);
+
+      // let resultado = (primerDigito+segundoDigito+tercerDigito);
+      // console.log('La suma de los tres dígitos de '+ numero + " es igual a: "+ resultado)
+
+      //       Ejercicios optativos
+
+      // 1.	Escribe un programa que pida al usuario un dígito (n) y calcule y muestre el valor de n+nn+nnn. Por ejemplo si el usuario introduce 5 el programa calcularía 5 + 55 + 555
+
+      // let valor1= prompt('Introduce un número');
+      // let valor2 = valor1+valor1
+      // let valor3 = valor1+valor1+valor1
+
+      // let resultado = parseInt(valor1)+parseInt(valor2)+parseInt(valor3);
+      // console.log(resultado);
+
+      // 2.	Escribe un programa que convierta los segundos a horas, minutos y segundos. Por ejemplo si introduce 4000 segundos que muestre el mensaje: 1 horas, 6 minutos, 40 segundos.
+
+      let introSeg = prompt('Introduce segundos');
+      let segundos = parseInt(introSeg);
+
+      let horas = 4000/3600;
+
+
+    
+
+
+
+
+      // 3.	Escribe un programa que calcule el resto de dividir dos números sin utilizar el operador de división de resto (%)
+
+
+
+      // 4.	Escribe un programa que pida un número de minutos y muestre cuantos años y días son.
+
+      // 5.	Escribe un programa que genere un número aleatorio entre el 1 y el 100 (pista: hay que utilizar una función, hay que buscarlo en internet ya que no lo hemos visto en clase).
+
+
+
+
+
+
+
+
+      // Ejercicios JS. DÍA 2
+
+      // Ejercicio. 1.	Escribe un programa que te calcule la largura de un string que pides al usuario.
+
+      // let palabra = prompt('Introduce un string');
+      // console.log(palabra.length);
+
+
+      // Ejercicio. 2.	Escribe un programa que cambie a minúsculas una frase en mayúsculas.
+
+      // let frase = 'EL CIELO ESTÁ ENLADRILLADO'
+      // let minu = frase.toLowerCase();
+      // console.log(minu);
+
+
+      // Ejercicio. 3.	Escribe un programa que escriba en mayúscula una frase en minúscula.
+
+      // let frase = 'El cielo está enladrillado'
+      // let mayu = frase.toUpperCase();
+      // console.log(mayu);
+
+
+      // Ejercicio. 4.	Escribe un programa que copie una subcadena de un string en otra variable usando una función.
+
+      // let cadena = 'Escribe un programa que copie una subcadena'
+      // let sustraer = cadena.substring(5, 18);
+      // console.log(sustraer);
+
+
+      // Ejercicio. 5.	Escribe un programa que reemplace una cadena por otra (Por ejemplo “Hola Arrate” por “Hola Iker”).
+
+      // let cadena1 = 'Hola Arrate';
+      // let nuevo = cadena1.replace('Arrate', 'Iker');
+      // console.log(nuevo);
+
+      // Ejercicio. 6.	Escribe un programa que dada una palabra en minúsculas, muestre en la consola la mitad de la palabra en minúsculas y la otra mitad en mayúsculas.
+
+      // let palabra = 'Atleticodemadrid'
+      // let mitad = palabra.substring(0,palabra.length/2);
+
+      // let mitadMayus = mitad.toUpperCase();
+      // let resultado = palabra.replace(mitad,mitadMayus);
+      // console.log(resultado);
+
+      // Ejercicio. 7.	Escribe un programa que dada una cadena identifique los caracteres del 5 al 10, ambos inclusive.
+
+      // let cadenaDeCaracteres = 'abcdefghijk';
+      // console.log(cadenaDeCaracteres.substring(4,10));
+
+      // Ejercicio. 8.	Escriba un programa que pida al usuario una suma y que te devuelva por consola los números que forman parte de la operación. Por ejemplo: 23+56 → el programa devolverá 23 y 56.
+
+      // let suma = prompt('Introduce una suma');
+      // let numDeDigitos = suma.length;
+      // let signo = suma.indexOf('+');
+      // let primerNum = parseInt(suma.substring(0,signo));
+      // let segundoNum = parseInt(suma.substring(signo,numDeDigitos));
+      // console.log(`Primer número: ${primerNum}  Segundo número: ${segundoNum}`);
+
     </script>
   </body>
 </html>
