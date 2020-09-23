@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condiciones JS</title>
+    <style>
+      body {
+        background-color: #222222;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Ejercicio. 1.	Escribe un programa que pida dos números y que muestre la suma, la resta, la multiplicación, la media, el más grande y el más pequeño.
+
+      // let num1 = parseInt(prompt("Introduce el primer número"));
+      // let num2 = parseInt(prompt("Introduce el segundo número"));
+      // let suma = num1 + num2;
+      // console.log(suma);
+      // let resta = num1 - num2;
+      // console.log(resta);
+      // let multiplicacion = num1 * num2;
+      // console.log(multiplicacion);
+      // let media = (num1 + num2) / 2;
+      // console.log(media);
+
+      // if (num1 > num2) {
+      //   console.log(`El número ${num1} es el mayor`);
+      //   console.log(`El número ${num2} es menor`);
+      // } else {
+      //   console.log(`El número ${num2} es el mayor`);
+      //   console.log(`El número ${num1} es menor`);
+      // }
+
+      // Ejercicio. 2.	Pide por teclado la edad del usuario. Si la edad es igual o inferior a 8 mostramos el mensaje "Pasa al tobogán", si no mostramos "Eres demasiado mayor para usar el tobogán".
+
+      // let edad = parseInt(prompt("Introduce tu edad"));
+      // if (edad <= 8) {
+      //   console.log("Pasa al tobogán");
+      // } else {
+      //   console.log("Eres demasiado mayor para usar el tobogán");
+      // }
+
+      // Ejercicio. 3.	Escribe un programa que pida al usuario 3 números. Si el resultado de la suma de los dos primeros es igual al tercer número, mostrarlo en pantalla, si no mostrar que el tercero no es la suma de los dos anteriores.
+
+      // let num1 = parseInt(prompt("Introduce numero 1"));
+      // let num2 = parseInt(prompt("Introduce numero 2"));
+      // let num3 = parseInt(prompt("Introduce numero 3"));
+
+      // if (num1 + num2 === num3) {
+      //   console.log(num3);
+      // } else {
+      //   console.log(
+      //     "El numero tres no es igual a la suma del número 1 y del numero 2"
+      //   );
+      // }
+
+      // Ejercicio. 4.	Escribe un programa que pida al usuario tres números y que diga si la diferencia entre uno de ellos es exactamente 20 menos que uno de los otros. Por ejemplo, si el usuario introduce 20, 40 y 55, el programa dirá que el primer número es 20 menos que el segundo.
+
+      // let num1 = parseInt(prompt("Introduce numero 1"));
+      // let num2 = parseInt(prompt("Introduce numero 2"));
+      // let num3 = parseInt(prompt("Introduce numero 3"));
+
+      // if (num2 - num1 === 20) {
+      //   console.log(`El primer número es 20 menos que el segundo`);
+      // }
+      // if (num3 - num2 === 20) {
+      //   console.log(`El segundo número es 20 menos que el tercero`);
+      // }
+
+      // Ejercicio. 5.	Pide al usuario que escriba un día de la semana (lunes, martes…). Mostrar en pantalla el día que dice que es si es entre lunes y viernes (Por ejemplo "Hoy es lunes") y si es fin de semana mostrar "Es fin de semana". Hazlo una vez usando switch y otra con if else.
+      let diaDeLaSemana = prompt("Introduce un día de la semana");
+      switch (diaDeLaSemana) {
+        case "Lunes":
+          console.log("Hoy es lunes");
+          break;
+        case "Martes":
+          console.log("Hoy es martes");
+          break;
+        case "Miercoles":
+          console.log("Hoy es miercoles");
+          break;
+        case "Jueves":
+          console.log("Hoy es jueves");
+          break;
+        case "Viernes":
+          console.log("Hoy es viernes");
+          break;
+        default:
+          console.log("Es fin de semana");
+      }
+    </script>
+  </body>
+</html>
