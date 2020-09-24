@@ -180,6 +180,29 @@
         console.log("Los números introducidos no se encuentran entre 25 y 75");
       } else {
       }
+
+      let num1dig1 = num1.substring(0, 1);
+      let num1dig2 = num1.substring(1, 2);
+      let num1dig3 = num2.substring(0, 1);
+      let num1dig4 = num2.substring(1, 2);
+
+      if (
+        num1dig1 === num1dig2 ||
+        num1dig1 === num1dig3 ||
+        num1dig1 === num1dig4
+      ) {
+        console.log("Hay al menos un dígito en común entre los dos números");
+      }
+
+      // Ejercicio.  12.	Resultado de carrera. Hacer varios programas en los que se le pregunta al usuario el puesto en el que acabó. Después:
+
+      // Si el valor de puesto es 1 mostramos mensaje con "Ganaste", si no "Lo importante es participar”.
+
+      // Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.
+
+      // Con switch: Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.
+
+      // Los puestos 1, 2 y 3 ven el mensaje "Sube al podium", el resto ven el mensaje "Se acabó la carrera". Hazlo usando un if/else.
     </script>
   </body>
 </html>
