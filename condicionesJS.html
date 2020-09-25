@@ -170,39 +170,162 @@
       // let valor2 = parseInt(prompt("Introduce el segundo valor"));
 
       // Ejercicio. 11.	Escribe un programa que pida dos números enteros entre 25 y 75 y que diga si hay un dígito en común entre los dos números.
-      let num1 = prompt("Introduce el primer número");
-      let num2 = prompt("Introduce el segundo número");
+      // let num1 = prompt("Introduce el primer número");
+      // let num2 = prompt("Introduce el segundo número");
 
-      let num1Int = parseInt(num1);
-      let num2Int = parseInt(num2);
+      // let num1Int = parseInt(num1);
+      // let num2Int = parseInt(num2);
 
-      if (num1Int < 25 || num2Int > 75) {
-        console.log("Los números introducidos no se encuentran entre 25 y 75");
-      } else {
-      }
+      // if (num1Int < 25 || num2Int > 75) {
+      //   console.log("Los números introducidos no se encuentran entre 25 y 75");
+      // }
 
-      let num1dig1 = num1.substring(0, 1);
-      let num1dig2 = num1.substring(1, 2);
-      let num1dig3 = num2.substring(0, 1);
-      let num1dig4 = num2.substring(1, 2);
+      // let num1dig1 = num1.substring(0, 1);
+      // let num1dig2 = num1.substring(1);
+      // let num1dig3 = num2.substring(0, 1);
+      // let num1dig4 = num2.substring(1);
 
-      if (
-        num1dig1 === num1dig2 ||
-        num1dig1 === num1dig3 ||
-        num1dig1 === num1dig4
-      ) {
-        console.log("Hay al menos un dígito en común entre los dos números");
-      }
+      // if (
+      //   num1dig1 === num1dig2 ||
+      //   num1dig1 === num1dig3 ||
+      //   num1dig1 === num1dig4
+      // ) {
+      //   console.log("Hay al menos un dígito en común entre los dos números");
+      // }
 
-      // Ejercicio.  12.	Resultado de carrera. Hacer varios programas en los que se le pregunta al usuario el puesto en el que acabó. Después:
+      // // Ejercicio.  12.	Resultado de carrera. Hacer varios programas en los que se le pregunta al usuario el puesto en el que acabó. Después:
+      // let puesto = prompt("¿En qué puesto has terminado la carrera?");
+      // // Si el valor de puesto es 1 mostramos mensaje con "Ganaste", si no "Lo importante es participar”.
+      // if (puesto === "1") {
+      //   console.log("Ganaste");
+      // } else {
+      //   console.log("Lo importante es participar");
+      // }
+      // // Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.
+      // if (puesto === "1") {
+      //   console.log("Medalla de oro");
+      // } else if (puesto === "2") {
+      //   console.log("Medalla de plata");
+      // } else if (puesto === "3") {
+      //   console.log("Medalla de bronce");
+      // } else {
+      //   console.log("Lo importante es participar");
+      // }
+      // // Con switch: Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.
+      // switch (puesto) {
+      //   case "1":
+      //     console.log("Medalla de oro");
+      //     break;
+      //   case "2":
+      //     console.log("Medalla de plata");
+      //     break;
+      //   case "3":
+      //     console.log("Medalla de bronce");
+      //     break;
+      //   default:
+      //     console.log("Lo importante es participar");
+      //     break;
+      // }
+      // // Los puestos 1, 2 y 3 ven el mensaje "Sube al podium", el resto ven el mensaje "Se acabó la carrera". Hazlo usando un if/else.
+      // if (puesto === "1" || puesto === "2" || puesto === "3") {
+      //   console.log("Sube al podium");
+      // } else {
+      //   console.log("Se acabó la carrera");
+      // }
 
-      // Si el valor de puesto es 1 mostramos mensaje con "Ganaste", si no "Lo importante es participar”.
+      // TODOEjercicio. 17. Escribe un programa que dada una frase sacará su carácter central. Nota:
+      // Si la largura de la frase es par deberá sacar los dos caracteres centrales correspondientes.
+      // Si es impar deberá sacar su único carácter central.
 
-      // Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.
+      // let frase = "Atletis";
+      // let caracteres = frase.length;
 
-      // Con switch: Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.
+      // Ejercicio. 18. Escribe un programa que muestre la fecha de hoy (pista 1: hay una función, pista 2: no hay que usar condicionales)
 
-      // Los puestos 1, 2 y 3 ven el mensaje "Sube al podium", el resto ven el mensaje "Se acabó la carrera". Hazlo usando un if/else.
+      // let fecha = new Date();
+      // console.log(fecha);
+
+      // Ejercicio. 19. Decir el número de helados que queremos comprar. Cada helado vale 2 euros. Si compramos más de 10 helados, nos regalan uno. Mostrar en pantalla el número de helados que nos dan y cuánto hemos pagado por ellos. (Sólo damos un helado gratuito aunque compren muchos más helados que 10)
+
+      // let helados = parseInt(prompt("¿Cuántos helados quieres?"));
+      // let precio = helados * 2;
+
+      // if (helados > 10) {
+      //   helados = helados + 1;
+      // }
+      // console.log(`Tienes ${helados} helados por ${precio} euros`);
+
+      // TODOEjercicio. 20. Con if else if: Mostrar en pantalla un menú con varias opciones. Dependiendo de lo que el usuario elija, mostrar en pantalla la selección. Hacerlo tanto con if else como con switch.
+
+      // Ejercicio. 21. Mostrar el mayor de tres valores
+      // let valor1 = 2;
+      // let valor2 = 15;
+      // let valor3 = 29;
+
+      // if (valor1 > valor2 && valor1 > valor3) {
+      //   console.log(valor1);
+      // }
+      // if (valor2 > valor1 && valor2 > valor3) {
+      //   console.log(valor2);
+      // }
+      // if (valor3 > valor1 && valor3 > valor2) {
+      //   console.log(valor3);
+      // }
+
+      // Ejercicio. 22. Mostrar el menor de tres valores
+      // let valor1 = 2;
+      // let valor2 = 1;
+      // let valor3 = 0;
+
+      // if (valor1 < valor2 && valor1 < valor3) {
+      //   console.log(valor1);
+      // }
+      // if (valor2 < valor1 && valor2 < valor3) {
+      //   console.log(valor2);
+      // }
+      // if (valor3 < valor1 && valor3 < valor2) {
+      //   console.log(valor3);
+      // }
+
+      // Ejercicios. 23. En una clase tienes tres exámenes, con un valor de 5 puntos máximo en cada uno. La nota final es la mejor nota de los dos primeros exámenes más la nota del tercer examen. Crea un programa que con tres notas calcula el resultado de nota final con los siguientes rangos:
+      // 10 es matrícula
+      // 9 y hasta 10 es sobresaliente
+      // 7 y hasta 9 es notable
+      // 6 y hasta 7 es bien
+      // 5 y hasta 6 es suficiente
+      // 0 hasta 5 es suspenso
+
+      // let examen1 = 1;
+      // let examen2 = 1;
+      // let examen3 = 2;
+
+      // let mejor1y2 = 0;
+      // let notaFinal = 0;
+
+      // //Calculo la nota final
+      // if (examen1 > examen2) {
+      //   mejor1y2 = examen1;
+      // } else {
+      //   mejor1y2 = examen2;
+      // }
+
+      // notaFinal = mejor1y2 + examen3;
+      // console.log(notaFinal);
+
+      // //Imprimo el resultado
+      // if (notaFinal < 5) {
+      //   console.log("Suspenso");
+      // } else if (notaFinal === 5) {
+      //   console.log("Suficiente");
+      // } else if (notaFinal === 6) {
+      //   console.log("Bien");
+      // } else if (notaFinal === 7 || notaFinal === 8) {
+      //   console.log("Notable");
+      // } else if (notaFinal === 9) {
+      //   console.log("Sobresaliente");
+      // } else {
+      //   console.log("Matrícula");
+      // }
     </script>
   </body>
 </html>
