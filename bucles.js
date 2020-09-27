@@ -56,8 +56,32 @@
 
 // 7.	Escribe un programa que pida valores. Si introduce un valor negativo, mostrar un mensaje diciendo que se ignoran los valores negativos.Seguir pidiendo hasta que el usuario introduzca un 0, entonces mostrar la suma de los valores introducidos.
 
-let valor = parseInt(prompt("Introduce un valor"));
+// let valor = 0;
+// let sumaValores = 0;
+// do {
+//   valor = parseInt(prompt("Introduce un valor"));
+//   if (valor < 0) {
+//     window.alert("Se ignoran los valores negativos.");
+//   } else {
+//     sumaValores = sumaValores + valor;
+//   }
+// } while (valor !== 0);
+// console.log(`La suma de los valores es ${sumaValores}`);
 
-if (valor < 0) {
-  console.log("Se ignoran los valores negativos");
+// 8.	Escribe un programa que muestre todos los valores pares o impares entre 1 y 100 dependiendo de si el usuario introduce P o I . Si introduce otra cosa, decir que ese valor no es correcto y pedirle otra vez.
+
+let valor = prompt("¿Qué prefieres? ¿Pares (P) ó impares (I)?");
+
+if (valor === "P" || valor === "I") {
+  console.log("OK");
 }
+
+// //Pares
+// for (let i = 2; i <= 100; i = i + 2) {
+//   console.log(i);
+// }
+
+// //Impares
+// for (let j = 1; j <= 100; j = j + 2) {
+//   console.log(j);
+// }

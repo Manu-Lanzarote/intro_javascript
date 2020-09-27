@@ -233,12 +233,20 @@
       //   console.log("Se acabó la carrera");
       // }
 
-      // TODOEjercicio. 17. Escribe un programa que dada una frase sacará su carácter central. Nota:
+      // Ejercicio. 17. Escribe un programa que dada una frase sacará su carácter central. Nota:
       // Si la largura de la frase es par deberá sacar los dos caracteres centrales correspondientes.
       // Si es impar deberá sacar su único carácter central.
 
-      // let frase = "Atletis";
-      // let caracteres = frase.length;
+      // let frase = "Atlet";
+      // let resto = frase.length;
+
+      // if (resto % 2 === 1) {
+      //   console.log(frase.substring(resto / 2, resto / 2 + 1));
+      // }
+
+      // if (resto % 2 === 0) {
+      //   console.log(frase.substring(resto / 2 - 1, resto / 2 + 1));
+      // }
 
       // Ejercicio. 18. Escribe un programa que muestre la fecha de hoy (pista 1: hay una función, pista 2: no hay que usar condicionales)
 
@@ -255,7 +263,58 @@
       // }
       // console.log(`Tienes ${helados} helados por ${precio} euros`);
 
-      // TODOEjercicio. 20. Con if else if: Mostrar en pantalla un menú con varias opciones. Dependiendo de lo que el usuario elija, mostrar en pantalla la selección. Hacerlo tanto con if else como con switch.
+      // Ejercicio. 20. Con if else if: Mostrar en pantalla un menú con varias opciones. Dependiendo de lo que el usuario elija, mostrar en pantalla la selección. Hacerlo tanto con if else como con switch.
+
+      // let menu = prompt(
+      //   `Elige entre una de estas opciones (1, 2 ó 3):
+      //   1 - Ensalada
+      //   2 - Verdura
+      //   3 - Legumbres
+      //   `
+      // );
+
+      // if (menu === "1") {
+      //   console.log("Disfruta de la ensalada,");
+      // } else if (menu === "2") {
+      //   console.log("Disfruta de las verduras,");
+      // } else {
+      //   console.log("Disfruta de las legumbras,");
+      // }
+
+      // let bebida = prompt(
+      //   `Elige una bebida (1, 2 ó 3):
+      //   1 - Refresco
+      //   2 - Vino
+      //   3 - Agua
+      //   `
+      // );
+
+      // switch (bebida) {
+      //   case "1":
+      //     console.log("del refresco,");
+      //     break;
+      //   case "2":
+      //     console.log("del vino,");
+      //     break;
+      //   default:
+      //     console.log("del agua,");
+      // }
+
+      // let postre = prompt(
+      //   `Elige un postre (1, 2 ó 3):
+      //   1 - Fruta
+      //   2 - Flan
+      //   3 - Helado
+      //   `
+      // );
+
+      // if (menu === "1") {
+      //   console.log("y de la frutita.");
+      // } else if (menu === "2") {
+      //   console.log("y del flan.");
+      // } else {
+      //   console.log("y del heladito.");
+      // }
 
       // Ejercicio. 21. Mostrar el mayor de tres valores
       // let valor1 = 2;
@@ -325,6 +384,43 @@
       //   console.log("Sobresaliente");
       // } else {
       //   console.log("Matrícula");
+      // }
+
+      //
+      // 24. Para convertir de grados centígrados a grados fahrenheit multiplicamos por 9, le dividimos 5 y a ese resultado le añadimos 32. Para convertir de fahrenheit a centígrados le restamos 32, multiplicamos por 5 y dividimos entre 9. Pide un valor y pregunta al usuario si quiere convertirlo a centígrados (si escribe C) o si quiere convertirlo a fahrenheit (si escribe F) y muestra el valor en pantalla.
+      // let grados = parseInt(prompt("Introduce un valor"));
+      // let conversor = prompt(
+      //   "¿Deseas convertir el valor a Celsius (C) o a Fahrenheit (F)?"
+      // );
+
+      // // De centigrados a fahrenhit (0 °C × 9 / 5) + 32 = 32 °F
+      // let fahrenheit = (grados * 9) / 5 + 32;
+      // // De fahrenheit a centigrados (32 °F − 32) × 5 / 9 = 0 °C
+      // let centigrados = ((grados - 32) * 5) / 9;
+
+      // if (conversor === "F") {
+      //   console.log(`La temperatura fahrenheit es de ${fahrenheit} grados`);
+      // } else {
+      //   console.log(`La temperatura celsius es de ${centigrados} grados`);
+      // }
+
+      //
+      // 25. Crea un programa para ver si los comerciales reciben un extra. Si venden más de 500 euros, les damos un extra de el 5% del total de lo que han vendido. El usuario introduce su nombre y el precio de las ventas. Muestra en pantalla su nombre, seguido de las ventas y en el caso de que las ventas superen 500 euros el 5% de las ventas como extra.
+
+      // let nombre = prompt("Introduce tu nombre");
+      // let ventas = parseInt(prompt("Introduce tus ventas totales"));
+
+      // //Compruebo si obtiene el bonus y la comisión que obtiene
+      // let bonus = ventas >= 500 ? true : false;
+      // let comision = (ventas * 5) / 100;
+
+      // //Imprimo por pantalla su nonbre y sus ventas
+      // console.log(
+      //   `Hola ${nombre} tus ventas totales ascienden a ${ventas} euros`
+      // );
+
+      // if (bonus === true) {
+      //   console.log(`Has un obtenido un bonus de ${comision} euros`);
       // }
     </script>
   </body>
