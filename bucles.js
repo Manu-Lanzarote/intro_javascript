@@ -112,7 +112,18 @@
 // }
 
 //
-// TODO11.	Escribe un programa que muestre el número entero positivo que el usuario introduzca pero al revés (si introduce 1478 que muestre 8741), hasta que el usuario introduzca 0. Si introduce 0 la primera vez, debería mostrarlo al revés (es decir, mostrar 0) y acabar el programa.
+// 11.	Escribe un programa que muestre el número entero positivo que el usuario introduzca pero al revés (si introduce 1478 que muestre 8741), hasta que el usuario introduzca 0. Si introduce 0 la primera vez, debería mostrarlo al revés (es decir, mostrar 0) y acabar el programa.
+// let aux = false;
+// do {
+//   let numero = prompt("Introduce un número");
+//   console.log(numero);
+//   for (let i = numero.length; i >= 0; i--) {
+//     console.log(numero.substring(i, i + 1));
+//   }
+//   if (numero === "0") {
+//     aux = true;
+//   }
+// } while (aux === false);
 
 //
 // 12.	Escribe un programa que pida un número de 3 dígitos y muestre el resultado de sumar sus dígitos.
@@ -200,7 +211,11 @@
 // }
 
 // // Mayúscula
-// if (contrasenya.charCodeAt(0) > 64 && contrasenya.charCodeAt(0) < 91) {
+// // if (contrasenya.charCodeAt(0) > 64 && contrasenya.charCodeAt(0) < 91) {
+// //   mayuscula = true;
+// // }
+// // MAYÚSCULA OPCIÓN DE ANDER
+// if (contrasenya.substring(0, 1) == contrasenya.substring(0, 1).toUpperCase()) {
 //   mayuscula = true;
 // }
 
@@ -213,9 +228,12 @@
 //     break;
 //   }
 // }
+// // CONTIENE NÚMEROS OPCIÓN DE ANDER
 
 // // Confirmar si la contraseña es correcta
-// if (largo === true && mayuscula === true && numeros === true) {
+// //NOTA DE ANDER. Cuando igualammos una variable a true no hace falta escribir por ejemplo (largo === true), es suficiente escribir (largo) ya que los booleanos por defecto son true. No hace falta (largo === true && mayuscula = true && numeros === true)
+
+// if (largo && mayuscula && numeros) {
 //   alert("Bienvenid@");
 // } else {
 //   alert("Contraseña no válida :(");
